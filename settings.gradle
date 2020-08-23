@@ -1,3 +1,4 @@
 rootProject.name = 'learn-spring'
 include 'ioc-container-overview'
+include 'spring-bean'
 
