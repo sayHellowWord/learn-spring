@@ -79,4 +79,10 @@ BeanDefinition是Spring Framework中定义Bean的配置元信息接口，包含�
 
 # 问题
 ## 如何注册一个Spring Bean
-通过BeanDefinition 和外部单体注册
+通过BeanDefinition 和 外部单体注册
+
+## 什么是Spring BeanDefinition
+定义SpringBean
+BeanDefinition 元信息
+
+## Spring容器是怎样关联注册Bean
