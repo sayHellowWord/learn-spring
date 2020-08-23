@@ -60,3 +60,23 @@ BeanDefinition是Spring Framework中定义Bean的配置元信息接口，包含�
 # 延迟初始化Spring Bean
 * XML配置 <Bean lazy-init
 * Java注解@Lazy(true)
+
+# 销毁 Spring Bean
+* @PreDestory 标注方法
+* 实现DisposableBean的destory()方法
+* 自定义初始化方法
+    * XML <bean destory
+    * Java 注解 @Bean(destory)
+    * Java API： AbstractBeanDefinition#SetDestoryMethodName(String)
+    
+# 垃圾回收 Spring  Bean
+* Bean 垃圾回收（GC）
+1、关闭Spring容器（应用上下文）
+2、执行GC
+3、Spring Bean 覆盖的 finalize()方法被调用
+
+
+
+# 问题
+## 如何注册一个Spring Bean
+通过BeanDefinition 和外部单体注册
