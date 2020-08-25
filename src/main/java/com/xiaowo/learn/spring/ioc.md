@@ -191,3 +191,15 @@ FactoryBean是创建Bean的一种方式，帮助实现复杂的初始化逻辑
 
 ## Spring IoC容器启动时做了那些准备
 IoC配置元信息读取和解析、IoC容器生命周期、Spring事件发布、国际化等
+
+
+# 面试题
+## ObjectFactory 和 BeanFactory 的区别
+都具备依赖查找的能力
+
+ObjectFactory 仅关注一个或一种类型的Bean依赖查找，并且自身不具备依赖查找的能力，能力由 BeanFactory 暑促
+
+BeanFactory 提供了单一类型、集合类型以及多层次等多种依赖查找方式
+
+## BeanFactory#getBean操作是否线程安全
+是，会上锁
